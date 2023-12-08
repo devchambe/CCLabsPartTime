@@ -19,31 +19,29 @@
     <script src="javascript.js"></script>
   </head>
 
-  <body>
+  <body onload="openPopover()">
     <div id="snackbar" class="snackbar">
-      <div class="snackbarContainer">
-        <div class="snackbarImageSection">
-          <img src="snackbarImage.png" class="snackbarImage" />
-        </div>
-        <div class="snackbarDetails">
-          <p class="snackbarHeader">
-            Uncover the Signs of Metabolic Damage with <br />
-            Our Quiz
-          </p>
-          <button class="snackbarButton">Take the quiz now</button>
-          <button
-            style="
-              right: 25px;
-              top: 15px;
-              position: absolute;
-              background-color: transparent;
-              border: none;
-            "
-            onclick="closePopover()"
-          >
-            <i class="fa-solid fa-xmark text-white"></i>
-          </button>
-        </div>
+      <div class="squircle">
+        <img src="snackbarImage.png" />
+      </div>
+      <div class="snackbarDetails">
+        <p class="snackbarHeader">
+          Uncover the Signs of Metabolic Damage with <br />
+          Our Quiz
+        </p>
+        <button class="snackbarButton">Take the quiz now</button>
+        <button
+          style="
+            right: 25px;
+            top: 15px;
+            position: absolute;
+            background-color: transparent;
+            border: none;
+          "
+          onclick="closePopover()"
+        >
+          <i class="fa-solid fa-xmark text-white"></i>
+        </button>
       </div>
     </div>
   </body>

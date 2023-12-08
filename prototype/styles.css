@@ -1,8 +1,8 @@
 body {
-   background-image: url("main.png");
+   /* background-image: url("main.png");
    background-repeat: no-repeat;
    background-size: cover; 
-   overflow: hidden;
+   overflow: hidden; */
 }
 
 #snackbar {
@@ -13,33 +13,27 @@ body {
    background: #1E282D;
    position: absolute;
    bottom:30px;
-   right:-400px;
-   animation:slideShow 3s;
-   animation-delay:2s;
-   animation-fill-mode: forwards;
+   /* right:-400px; */
+   right:30px;
 }
 
-.snackbarContainer {
-   display: grid;
-   grid-template-columns: auto;
-   grid-template-rows: auto;
-   grid-template-areas: "image details";
-}
-
-.snackbarImageSection {
-   grid-area: image;
-}
-
-.snackbarDetails {
-   grid-area: details;
-}
-
-.snackbarImage {
+.squircle {  
    width: 120px;
    height: 155px;
-   object-fit: cover;
-   border-radius: 17%;
+   border-radius: 30%;
+   overflow: hidden;
+   float: left;; 
+}
 
+.squircle img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.snackbarDetails{
+   float: right;
+   padding-right: 30px;
 }
 
 .snackbarHeader {
